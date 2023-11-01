@@ -12,9 +12,7 @@ export default function DetailPage() {
   const navigate = useNavigate();
   const { id } = useParams();
   const { data: country, loading } = useFetch(`${url}/name/${id}`);
-  const { data: favourites } = useFetch(`${urlJson}/favourite`);
   const { mutate } = usePost(`${urlJson}/favourite`);
-  const [fav, setFav] = useState(false);
   const [borders, setBorders] = useState([]);
   const [countryData, setCountryData] = useState<any>({
     name: "",

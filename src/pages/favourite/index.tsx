@@ -18,7 +18,9 @@ export default function FavouritePage() {
 
   return (
     <div className={styles.card__containers}>
-      <button onClick={() => goHomePage()}>Go Home Page</button>
+      <button onClick={() => goHomePage()} className={styles.btn}>
+        Go Home Page
+      </button>
       <div className={styles.card__container}>
         {data?.map((item, idx) => (
           <CardCountry key={idx} country={item} navigate={handleNavigate} />
