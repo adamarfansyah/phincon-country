@@ -1,0 +1,21 @@
+@import "../../styles/base";
+
+.card__container {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  grid-template-columns: repeat(1, auto);
+  margin: 100px 0;
+  @include breakpoint(medium) {
+    grid-template-columns: repeat(2, auto);
+  }
+  @include breakpoint(large) {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+.card__containers {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+}

@@ -1,0 +1,19 @@
+@import "../../styles/base";
+
+.card__title {
+  font-weight: $Weights-bold;
+  margin-bottom: 20px;
+}
+
+.card__desc {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 10px;
+  label {
+    font-weight: $Weights-medium;
+  }
+  p {
+    font-weight: $Weights-light;
+  }
+}

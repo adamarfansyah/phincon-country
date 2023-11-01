@@ -1,0 +1,13 @@
+@import "../../styles/base";
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  label {
+    font-weight: 700;
+  }
+  p {
+    font-weight: 300;
+  }
+}
