@@ -83,11 +83,13 @@ export default function DetailPage() {
         <div className={styles.detail__btns}>
           <div className={styles.detail__button} onClick={() => navigate("/")}>
             <ArrowBackIcon />
-            Go Back
+            Back
           </div>
           <div className={styles.detail__button} onClick={() => addFavourite()}>
             <FavoriteIcon />
-            Add Favourite
+          </div>
+          <div className={styles.detail__button} onClick={() => navigate("/favourite")}>
+            Favourites
           </div>
         </div>
         <div className={styles.detail__wrapper}>
